@@ -17,6 +17,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$main: #0277BD;
+
 * {
 	box-sizing: border-box;
 }
@@ -27,11 +29,6 @@ html {
 
 body {
 	height: 100%;
-  background: -webkit-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
-  background:    -moz-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
-  background:     -ms-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
-  background:      -o-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
-  background:         linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
   font-family: 'Lato', sans-serif;
 }
 
@@ -46,36 +43,45 @@ body {
 }
 
 .navbar-default {
-	background-color: white;
+  background-color: $main;
+  // background: -webkit-linear-gradient(90deg, #795548 10%, #93F9B9 90%);
+  // background:    -moz-linear-gradient(90deg, #795548 10%, #93F9B9 90%);
+  // background:     -ms-linear-gradient(90deg, #795548 10%, #93F9B9 90%);
+  // background:      -o-linear-gradient(90deg, #795548 10%, #93F9B9 90%);
+  // background:         linear-gradient(90deg, #795548 10%, #93F9B9 90%);
 	border-radius: 0;
-	height: 80px;
-	padding: 15px 0;
+	height: 64px;
+	padding: 6px 0;
 	border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+  a {
+    color: #fff !important;
+  }
 }
 
 .navbar-brand {
 	text-transform: uppercase;
 	letter-spacing: -1px;
-	font-size: 2em;
+	font-size: 1.6em;
 	font-weight: 300;
-	color: #1D976C !important;
+	color: #fff !important;
 }
 
 #jobs {
 	.job {
 		padding: 1em 0;
-		border-bottom: 1px solid rgba(250,250,250, 0.5);
+		border-bottom: 1px solid rgba(34, 34, 34, 0.1);
 		h2 {
 			font-size: 2.5em;
 			font-weight: 300;
 			margin-bottom: 0;
-			color: white;
+			color: $main;
 			a {
-				color: white;
+				color: $main;
 			}
 		}
 		p {
-			color: rgba(250,250,250, 0.9);
+			color: rgba(34,34,34, 0.5);
 		}
 	}
 }
